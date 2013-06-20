@@ -1,0 +1,32 @@
+A51 MACRO ASSEMBLER  A1                                                                   01/09/2013 20:42:12 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN a1.OBJ
+ASSEMBLER INVOKED BY: C:\Program_Files\Keil\C51\BIN\A51.EXE a1.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org             00h
+                       2     
+0000 7401              3     mov             a, #01h
+0002 75F002            4     mov             b, #02h
+0005 25F0              5     add             a, b
+0007 F580              6     mov             p0, a
+                       7     end
+A51 MACRO ASSEMBLER  A1                                                                   01/09/2013 20:42:12 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

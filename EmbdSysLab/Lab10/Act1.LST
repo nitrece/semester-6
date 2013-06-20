@@ -1,0 +1,50 @@
+A51 MACRO ASSEMBLER  ACT1                                                                 04/03/2013 09:24:22 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Act1.OBJ
+ASSEMBLER INVOKED BY: C:\Program_Files\Keil\C51\BIN\A51.EXE Act1.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; Constants
+  0080                 2     DAC_PORT        EQU             P0
+                       3     
+                       4     ; Program
+0000                   5     org 0h
+0000 7800              6     mov r0, #0
+0002                   7     reout:
+0002 8880              8     mov DAC_PORT, r0
+0004 08                9     inc r0
+0005 1109             10     acall delay
+0007 80F9             11     sjmp reout
+                      12     
+0009                  13     delay:
+0009 7F01             14     mov r7, #1
+000B                  15     loop1:
+000B 7E01             16     mov r6, #1
+000D                  17     loop2:
+000D DEFE             18     djnz r6, loop2
+000F DFFA             19     djnz r7, loop1
+0011 22               20     ret
+                      21     end
+A51 MACRO ASSEMBLER  ACT1                                                                 04/03/2013 09:24:22 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DAC_PORT . . . . .  D ADDR   0080H   A   
+DELAY. . . . . . .  C ADDR   0009H   A   
+LOOP1. . . . . . .  C ADDR   000BH   A   
+LOOP2. . . . . . .  C ADDR   000DH   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+REOUT. . . . . . .  C ADDR   0002H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,57 @@
+A51 MACRO ASSEMBLER  ACT3                                                                 01/23/2013 10:04:44 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Act3.OBJ
+ASSEMBLER INVOKED BY: C:\Program_Files\Keil\C51\BIN\A51.EXE Act3.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0h
+0000 7840              2     mov r0, #40h
+0002 7A04              3     mov r2, #4
+0004                   4     loop1:
+0004 86F0              5     mov b, @r0
+0006 E8                6     mov a, r0
+0007 FC                7     mov r4, a
+0008 EA                8     mov a, r2
+0009 FB                9     mov r3, a
+000A E8               10     mov a, r0
+000B F9               11     mov r1, a
+000C 09               12     inc r1
+000D                  13     loop2:
+000D E5F0             14     mov a, b
+000F 97               15     subb a, @r1
+0010 4004             16     jc is_greater
+0012 87F0             17     mov b, @r1
+0014 E9               18     mov a, r1
+0015 FC               19     mov r4, a
+0016                  20     is_greater:
+0016 09               21     inc r1
+0017 DBF4             22     djnz r3, loop2
+0019 EC               23     mov a, r4
+001A F9               24     mov r1, a
+001B E6               25     mov a, @r0
+001C F7               26     mov @r1, a
+001D A6F0             27     mov @r0, b
+001F 08               28     inc r0
+0020 DAE2             29     djnz r2, loop1
+                      30     end
+A51 MACRO ASSEMBLER  ACT3                                                                 01/23/2013 10:04:44 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+IS_GREATER . . . .  C ADDR   0016H   A   
+LOOP1. . . . . . .  C ADDR   0004H   A   
+LOOP2. . . . . . .  C ADDR   000DH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

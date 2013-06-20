@@ -1,0 +1,64 @@
+A51 MACRO ASSEMBLER  ACT4                                                                 01/30/2013 10:39:45 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Act4.OBJ
+ASSEMBLER INVOKED BY: C:\Program_Files\Keil\C51\BIN\A51.EXE Act4.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0h
+0000 E540              2     mov a, 40h
+0002 8542F0            3     mov b, 42h
+0005 A4                4     mul ab
+0006 F544              5     mov 44h, a
+0008 85F045            6     mov 45h, b 
+                       7     
+000B E541              8     mov a, 41h
+000D 8542F0            9     mov b, 42h
+0010 A4               10     mul ab
+0011 2545             11     add a, 45h
+0013 F545             12     mov 45h, a
+0015 E5F0             13     mov a, b
+0017 3400             14     addc a, #0
+0019 F546             15     mov 46h, a
+                      16     
+001B E540             17     mov a, 40h
+001D 8543F0           18     mov b, 43h
+0020 A4               19     mul ab
+0021 2545             20     add a, 45h
+0023 F545             21     mov 45h, a
+0025 E5F0             22     mov a, b
+0027 3400             23     addc a, #0
+0029 2546             24     add a, 46h
+002B F546             25     mov 46h, a
+002D 7400             26     mov a, #0
+002F 3400             27     addc a, #0
+0031 F547             28     mov 47h, a
+                      29     
+0033 E541             30     mov a, 41h
+0035 8543F0           31     mov b, 43h
+0038 A4               32     mul ab
+0039 2546             33     add a, 46h
+003B F546             34     mov 46h, a
+003D E5F0             35     mov a, b
+003F 3400             36     addc a, #0
+0041 2547             37     add a, 47h
+0043 F547             38     mov 47h, a
+                      39     
+                      40     end
+A51 MACRO ASSEMBLER  ACT4                                                                 01/30/2013 10:39:45 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,41 @@
+A51 MACRO ASSEMBLER  ACT2                                                                 01/23/2013 09:18:43 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Act2.OBJ
+ASSEMBLER INVOKED BY: C:\Program_Files\Keil\C51\BIN\A51.EXE Act2.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0h
+0000 7840              2     mov r0, #40h
+0002 7B05              3     mov r3, #5
+0004 86F0              4     mov b, @r0
+0006                   5     loop:
+0006 E5F0              6     mov a, b
+0008 96                7     subb a, @r0
+0009 5002              8     jnc is_smaller
+000B 86F0              9     mov b, @r0
+000D                  10     is_smaller:
+000D 08               11     inc r0
+000E DBF6             12     djnz r3, loop
+0010 85F0A0           13     mov p2, b
+                      14     end
+A51 MACRO ASSEMBLER  ACT2                                                                 01/23/2013 09:18:43 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+IS_SMALLER . . . .  C ADDR   000DH   A   
+LOOP . . . . . . .  C ADDR   0006H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

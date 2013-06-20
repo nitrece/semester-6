@@ -1,0 +1,38 @@
+A51 MACRO ASSEMBLER  ACT5                                                                 02/06/2013 09:37:59 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Act5.OBJ
+ASSEMBLER INVOKED BY: C:\Program_Files\Keil\C51\BIN\A51.EXE Act5.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0h
+0000 75810D            2     mov sp, #0Dh
+0003 750D01            3     mov 0Dh, #01
+0006 750C02            4     mov 0Ch, #02
+0009 750B03            5     mov 0Bh, #03
+000C 750A04            6     mov 0Ah, #04
+000F 750905            7     mov 09h, #05
+0012 750806            8     mov 08h, #06
+0015 D000              9     pop 0h
+0017 D001             10     pop 1h
+0019 D002             11     pop 2h
+001B D003             12     pop 3h
+001D D004             13     pop 4h
+                      14     end
+A51 MACRO ASSEMBLER  ACT5                                                                 02/06/2013 09:37:59 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+SP . . . . . . . .  D ADDR   0081H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

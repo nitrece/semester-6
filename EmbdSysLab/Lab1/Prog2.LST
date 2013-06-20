@@ -1,0 +1,33 @@
+A51 MACRO ASSEMBLER  PROG2                                                                01/16/2013 09:10:52 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Prog2.OBJ
+ASSEMBLER INVOKED BY: C:\Program_Files\Keil\C51\BIN\A51.EXE Prog2.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000 8544F0            1     mov b, 44h
+0003 7840              2     mov r0, #40h
+0005 7903              3     mov r1, #3
+0007                   4     loop:
+0007 A6F0              5     mov @r0, b
+0009 08                6     inc r0
+000A D9FB              7     djnz r1, loop
+                       8     end
+A51 MACRO ASSEMBLER  PROG2                                                                01/16/2013 09:10:52 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+LOOP . . . . . . .  C ADDR   0007H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

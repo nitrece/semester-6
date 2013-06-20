@@ -1,0 +1,48 @@
+A51 MACRO ASSEMBLER  ACT2                                                                 03/06/2013 09:16:24 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Act2.OBJ
+ASSEMBLER INVOKED BY: C:\Program_Files\Keil\C51\BIN\A51.EXE Act2.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; Fout = 500Hz
+                       2     ; Tclk = 11.0592 / 12 = 921.6kHz
+                       3     ; Delay = 460.8 == 461
+                       4     ; Load val = -922 = FC66h
+0000                   5     org 0h
+0000                   6     restart:
+0000 758B33            7     mov TL1, #033h
+0003 758DFE            8     mov TH1, #0FEh
+0006 758910            9     mov TMOD, #10h
+0009 C28F             10     clr TF1
+000B D28E             11     setb TR1
+000D                  12     wait:
+000D 308FFD           13     jnb TF1, wait
+0010 C28E             14     clr TR1
+0012 B290             15     cpl P1.0
+0014 80EA             16     sjmp restart
+                      17     end
+A51 MACRO ASSEMBLER  ACT2                                                                 03/06/2013 09:16:24 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+P1 . . . . . . . .  D ADDR   0090H   A   
+RESTART. . . . . .  C ADDR   0000H   A   
+TF1. . . . . . . .  B ADDR   0088H.7 A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+WAIT . . . . . . .  C ADDR   000DH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

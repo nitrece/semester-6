@@ -1,0 +1,77 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        01/30/2013  10:39:46  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\PROGRAM_FILES\KEIL\C51\BIN\BL51.EXE Act4.obj TO Lab2 RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  Act4.obj (ACT4)
+
+
+LINK MAP OF MODULE:  Lab2 (ACT4)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0045H     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  Lab2 (ACT4)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ACT4
+  D:00F0H         SYMBOL        B
+  C:0000H         LINE#         2
+  C:0002H         LINE#         3
+  C:0005H         LINE#         4
+  C:0006H         LINE#         5
+  C:0008H         LINE#         6
+  C:000BH         LINE#         8
+  C:000DH         LINE#         9
+  C:0010H         LINE#         10
+  C:0011H         LINE#         11
+  C:0013H         LINE#         12
+  C:0015H         LINE#         13
+  C:0017H         LINE#         14
+  C:0019H         LINE#         15
+  C:001BH         LINE#         17
+  C:001DH         LINE#         18
+  C:0020H         LINE#         19
+  C:0021H         LINE#         20
+  C:0023H         LINE#         21
+  C:0025H         LINE#         22
+  C:0027H         LINE#         23
+  C:0029H         LINE#         24
+  C:002BH         LINE#         25
+  C:002DH         LINE#         26
+  C:002FH         LINE#         27
+  C:0031H         LINE#         28
+  C:0033H         LINE#         30
+  C:0035H         LINE#         31
+  C:0038H         LINE#         32
+  C:0039H         LINE#         33
+BL51 BANKED LINKER/LOCATER V6.22                                                      01/30/2013  10:39:46  PAGE 2
+
+
+  C:003BH         LINE#         34
+  C:003DH         LINE#         35
+  C:003FH         LINE#         36
+  C:0041H         LINE#         37
+  C:0043H         LINE#         38
+  -------         ENDMOD        ACT4
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0045H BYTE ( 3%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=69
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

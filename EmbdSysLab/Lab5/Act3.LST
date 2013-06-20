@@ -1,0 +1,54 @@
+A51 MACRO ASSEMBLER  ACT3                                                                 02/13/2013 09:42:26 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Act3.OBJ
+ASSEMBLER INVOKED BY: C:\Program_Files\Keil\C51\BIN\A51.EXE Act3.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     org 0h
+0000 900150            2     mov dptr, #150h
+0003 7840              3     mov r0, #40h
+0005 7958              4     mov r1, #58h
+0007 7A00              5     mov r2, #0
+0009 7B0C              6     mov r3, #12
+000B                   7     copy_loop:
+000B EA                8     mov a, r2
+000C 93                9     movc a, @a+dptr
+000D F6               10     mov @r0, a
+000E 08               11     inc r0
+000F 0A               12     inc r2
+0010 DBF9             13     djnz r3, copy_loop
+0012 7840             14     mov r0, #40h
+0014 7B0C             15     mov r3, #12
+0016 7400             16     mov a, #0
+0018                  17     add_loop:
+0018 26               18     add a, @r0
+0019 08               19     inc r0
+001A DBFC             20     djnz r3, add_loop
+001C 75F00C           21     mov b, #12
+001F 84               22     div ab
+0020 F7               23     mov @r1, a
+0150                  24     org 150h
+0150 07070707         25     db 7, 7, 7, 7, 7, 7, 9, 9, 9, 9, 9, 9
+0154 07070909                
+0158 09090909                
+                      26     end
+A51 MACRO ASSEMBLER  ACT3                                                                 02/13/2013 09:42:26 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ADD_LOOP . . . . .  C ADDR   0018H   A   
+B. . . . . . . . .  D ADDR   00F0H   A   
+COPY_LOOP. . . . .  C ADDR   000BH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

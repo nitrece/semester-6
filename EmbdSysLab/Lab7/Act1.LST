@@ -1,0 +1,87 @@
+A51 MACRO ASSEMBLER  ACT1                                                                 03/13/2013 08:59:15 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.02b
+OBJECT MODULE PLACED IN Act1.OBJ
+ASSEMBLER INVOKED BY: C:\Program_Files\Keil\C51\BIN\A51.EXE Act1.asm SET(SMALL) DEBUG EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     ; Fout = 4800bps
+                       2     ; Tclk = 11.0592 / 12 = 921.6kHz
+                       3     ; Tser = 921.6 / 32 = 28800Hz
+                       4     ; Delay = 28800 / 4800 = 6
+                       5     ; Load val = -6 = FAh
+0000                   6     org 0h
+0000 900200            7     mov dptr, #200h
+0003 7800              8     mov r0, #0
+0005 758920            9     mov TMOD, #20h
+0008 758DFA           10     mov TH1, #0FAh
+000B 758BFA           11     mov TL1, #0FAh
+000E 759840           12     mov SCON, #40h
+0011 D28E             13     setb TR1
+0013                  14     resend:
+0013 E8               15     mov a, r0
+0014 93               16     movc a, @a+dptr
+0015 7004             17     jnz disp
+0017 7800             18     mov r0, #0
+0019 80F8             19     sjmp resend
+001B                  20     disp:
+001B F599             21     mov SBUF, a
+001D 08               22     inc r0
+001E                  23     wait:
+001E 3099FD           24     jnb TI, wait
+0021 C299             25     clr TI
+0023 80EE             26     sjmp resend
+0200                  27     org 200h
+0200 48617265         28     db      "Hare Krishna Hare Krishna, Krishna Krishna Hare Hare. Hare Rama Hare Rama, Rama Ra
+                             ma Hare Hare.", 0Dh, 0Ah, 0
+0204 204B7269                
+0208 73686E61                
+020C 20486172                
+0210 65204B72                
+0214 6973686E                
+0218 612C204B                
+021C 72697368                
+0220 6E61204B                
+0224 72697368                
+0228 6E612048                
+022C 61726520                
+0230 48617265                
+0234 2E204861                
+0238 72652052                
+023C 616D6120                
+0240 48617265                
+0244 2052616D                
+0248 612C2052                
+024C 616D6120                
+0250 52616D61                
+0254 20486172                
+0258 65204861                
+025C 72652E0D                
+0260 0A00                    
+                      29     end
+A51 MACRO ASSEMBLER  ACT1                                                                 03/13/2013 08:59:15 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DISP . . . . . . .  C ADDR   001BH   A   
+RESEND . . . . . .  C ADDR   0013H   A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TI . . . . . . . .  B ADDR   0098H.1 A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+WAIT . . . . . . .  C ADDR   001EH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

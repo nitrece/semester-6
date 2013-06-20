@@ -1,0 +1,119 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        03/27/2013  10:59:47  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\PROGRAM_FILES\KEIL\C51\BIN\BL51.EXE Act1.obj TO Act1 RAMSIZE (256)
+
+
+INPUT MODULES INCLUDED:
+  Act1.obj (ACT1)
+
+
+LINK MAP OF MODULE:  Act1 (ACT1)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     007AH     ABSOLUTE     
+
+
+
+SYMBOL TABLE OF MODULE:  Act1 (ACT1)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        ACT1
+  C:0070H         SYMBOL        IS_LCD_READY
+  C:005DH         SYMBOL        LCDCMD
+  C:0063H         SYMBOL        LCDDATA
+  C:0069H         SYMBOL        LCDREADY
+  C:0050H         SYMBOL        LCDWRT8
+  B:00A0H.4       SYMBOL        LCD_E8
+  B:00A0H.5       SYMBOL        LCD_LED8
+  D:0080H         SYMBOL        LCD_PORT8
+  B:00A0H.2       SYMBOL        LCD_RS8
+  B:00A0H.3       SYMBOL        LCD_RW8
+  D:0080H         SYMBOL        P0
+  D:00A0H         SYMBOL        P2
+  C:004EH         SYMBOL        WAIT
+  C:0000H         LINE#         10
+  C:0002H         LINE#         11
+  C:0004H         LINE#         12
+  C:0006H         LINE#         13
+  C:0008H         LINE#         14
+  C:000AH         LINE#         15
+  C:000CH         LINE#         16
+  C:000EH         LINE#         17
+  C:0010H         LINE#         18
+  C:0012H         LINE#         19
+  C:0014H         LINE#         20
+  C:0016H         LINE#         21
+  C:0018H         LINE#         22
+  C:001AH         LINE#         23
+  C:001CH         LINE#         24
+  C:001EH         LINE#         25
+  C:0020H         LINE#         26
+BL51 BANKED LINKER/LOCATER V6.22                                                      03/27/2013  10:59:47  PAGE 2
+
+
+  C:0022H         LINE#         27
+  C:0024H         LINE#         28
+  C:0026H         LINE#         29
+  C:0028H         LINE#         30
+  C:002AH         LINE#         31
+  C:002CH         LINE#         32
+  C:002EH         LINE#         33
+  C:0030H         LINE#         34
+  C:0032H         LINE#         35
+  C:0034H         LINE#         36
+  C:0036H         LINE#         37
+  C:0038H         LINE#         38
+  C:003AH         LINE#         39
+  C:003CH         LINE#         40
+  C:003EH         LINE#         41
+  C:0040H         LINE#         42
+  C:0042H         LINE#         43
+  C:0044H         LINE#         44
+  C:0046H         LINE#         45
+  C:0048H         LINE#         46
+  C:004AH         LINE#         47
+  C:004CH         LINE#         48
+  C:004EH         LINE#         50
+  C:0050H         LINE#         57
+  C:0051H         LINE#         58
+  C:0053H         LINE#         59
+  C:0055H         LINE#         60
+  C:0057H         LINE#         61
+  C:0059H         LINE#         62
+  C:005BH         LINE#         63
+  C:005CH         LINE#         64
+  C:005DH         LINE#         69
+  C:005FH         LINE#         70
+  C:0060H         LINE#         71
+  C:0062H         LINE#         77
+  C:0063H         LINE#         84
+  C:0065H         LINE#         85
+  C:0066H         LINE#         86
+  C:0068H         LINE#         92
+  C:0069H         LINE#         99
+  C:006CH         LINE#         100
+  C:006EH         LINE#         101
+  C:0070H         LINE#         103
+  C:0072H         LINE#         104
+  C:0074H         LINE#         105
+  C:0077H         LINE#         106
+  C:0079H         LINE#         107
+  -------         ENDMOD        ACT1
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 007AH BYTE ( 5%) *
+******************************************************************************
+
+Program Size: data=8.0 xdata=0 code=122
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
