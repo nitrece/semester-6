@@ -1,7 +1,0 @@
-menuitem "Select input"
-
-slider Input(1,3,1,1,inputparameter)
-{
-	inputstate = inputparameter;
-}
-

@@ -1,6 +1,0 @@
--z -q -c -o"./Debug/dsk_app.out" -x -i"C:/CCStudio_v3.1/c6000/dsk6713/lib" -i"C:/CCStudio_v3.1/C6000/rtdx/lib" -i"C:/CCStudio_v3.1/C6000/csl/lib" -i"C:/CCStudio_v3.1/C6000/xdais/lib" -i"C:/CCStudio_v3.1/C6000/bios/lib" -i"C:/CCStudio_v3.1/C6000/cgtools/lib" -l"dsk6713bsl.lib"
-"C:\Documents and Settings\Alexander\Desktop\dsk_app\Debug\aic23.obj"
-"C:\Documents and Settings\Alexander\Desktop\dsk_app\Debug\dsk_app.obj"
-"C:\Documents and Settings\Alexander\Desktop\dsk_app\Debug\dsk_appcfg.obj"
-"C:\Documents and Settings\Alexander\Desktop\dsk_app\Debug\dsk_appcfg_c.obj"
-"C:\Documents and Settings\Alexander\Desktop\dsk_app\dsk_appcfg.cmd"

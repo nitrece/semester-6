@@ -1,7 +1,0 @@
-menuitem "Select decoding technique"
-
-slider Technique(1,2,1,1,modeparameter)
-{
-	mode = modeparameter;
-}
-

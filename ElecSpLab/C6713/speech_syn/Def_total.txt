@@ -1,4 +1,0 @@
-
-/* Value of Def_total to be used in speech.c file */
-
-Def_total:7440
