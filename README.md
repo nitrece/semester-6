@@ -13,3 +13,5 @@ Courses:
 <br>
 
 ![](Timetable.jpg)<br>
+
+![](https://ga-beacon.deno.dev/G-ERJXRWVLBT:BGFjXiiDQ5-gqJoAeoZGqg/github.com/nitrece/semester-6)
